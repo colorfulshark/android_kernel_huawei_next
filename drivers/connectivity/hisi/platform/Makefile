@@ -17,10 +17,10 @@ endif
 
 DRIVER_PATH=$(HI1102_DRIVER_SRC_PATH)/$(DRIVER_FLODER)
 
-include $(DRIVER_PATH)/$(HI1102_COMM_DEFCONFIG)
-include $(DRIVER_PATH)/$(PLAT_DEFCONFIG_FILE)
+# include $(DRIVER_PATH)/$(HI1102_COMM_DEFCONFIG)
+# include $(DRIVER_PATH)/$(PLAT_DEFCONFIG_FILE)
 
-$(warning defconfig: $(DRIVER_PATH)/$(PLAT_DEFCONFIG_FILE))
+# $(warning defconfig: $(DRIVER_PATH)/$(PLAT_DEFCONFIG_FILE))
 
 oal-objs := oal_bus_if.o oal_main.o oal_mem.o oal_net.o oal_hardware.o oal_schedule.o oal_pci_if.o oal_aes.o oal_kernel_file.o oal_cfg80211.o oal_sdio_host.o oal_profiling.o oal_hcc_host.o oal_hcc_test.o
 oal-objs := $(addprefix oal/,$(oal-objs))
